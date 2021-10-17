@@ -181,6 +181,7 @@ ul {
     text-align: center;
     align-items: center;
     height: 70%;
+    margin-top: -30px;
 }
 
 /** Intro text */
