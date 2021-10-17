@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    font-family: "Cinzel", sans-serif;
+    background-color: #000;
+}
+
+a, img, svg {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+/** Site outer container */
+#template__intro-container {
+    width: 100%;
+    height: 100vh;
+}
+
+/** Background image and overlay */
+#template__background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+}
+
+#template__background-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+#template__background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -9;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    /** Mess with other features of this mode;
+        desired effect is darker image, not necessarily
+        darker overlay */
+    mix-blend-mode: hard-light;
+}
+
+/** Logo and navigation menu */
+#template__site-logo-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+}
+
+#template__site-logo-navigation #ln-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+/** Site logo */
+#ln-container #logo-container {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+#ln-container #logo-container img {
+    /** Sizing of original logo */
+    width: 125px;
+}
+
+#ln-container #logo-container p {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: -10px;
+}
+
+/** Hamburger menu */
+#ln-container #menu-container {
+    width: 60px;
+    height: 60px;
+}
+
+#ln-container #menu-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#ln-container #menu-container a svg rect {
+    /** Temporary WHITE fill, change for more thematic color later */
+    fill: #fff;
+}
+
+/** Site intro, socials, and reserve button container */
+#template__intro-text-socials-cta {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 150px);
+    z-index: 0;
+}
+
+#intro-text-socials-cta-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 70%;
+}
+
+/** Intro text */
+#intro-text-container h1 {
+    font-size: 4rem;
+    line-height: 4.75rem;
+    font-weight: 400;
+    color: #b08320;
+}
+
+#intro-text-container h2 {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    color: #fff;
+}
+
+/** Socials container */
+#socials-container {
+    width: 30%;
+}
+
+#socials-container ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#socials-container ul li a {
+    color: #fff;
+}
+
+#socials-container ul li a svg {
+    width: 25px;
+    height: 25px;
+}
+
+/** Reserve button container */
+#cta-container {
+    width: 75%;
+    height: 80px;
+}
+
+#cta-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    border: 2px solid #fff;
+    color: #fff;
+}
