@@ -210,8 +210,17 @@ ul {
     width: 100%;
 }
 
+#socials-container ul:hover li a {
+    opacity: 0.25;
+}
+
 #socials-container ul li a {
     color: #fff;
+    transition: opacity 200ms ease-in-out;
+}
+
+#socials-container ul li a:hover {
+    opacity: 1.0;
 }
 
 #socials-container ul li a svg {
