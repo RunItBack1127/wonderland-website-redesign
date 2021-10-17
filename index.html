@@ -17,13 +17,21 @@
 <body>
     <section id="template__intro-container">
         <!-- Site logo and navigation menu -->
-        <div id="template__site-logo-navigation">
+        <div id="template__site-logo-navigation" onmouseleave="switchActiveTab('Home')">
             <div id="ln-container">
                 <div id="logo-container">
                     <img src="images/logo/template-logo.webp">
                     <!-- <p>Kitchen &<br>Cocktails</p> -->
                 </div>
-                <div id="menu-container">
+                <nav id="navigation-links">
+                    <ul>
+                        <li><a onmouseenter="switchActiveTab('Home')" id="home-tab" tab-status="active" href="">Home</a></li>
+                        <li><a onmouseenter="switchActiveTab('Menu')" id="menu-tab" tab-status="idle" href="">Menu</a></li>
+                        <li><a onmouseenter="switchActiveTab('Reservation')" id="reservation-tab" tab-status="idle" href="">Reservations</a></li>
+                        <li><a onmouseenter="switchActiveTab('Order')" id="order-tab" tab-status="idle" href="">Order Online</a></li>
+                    </ul>
+                </div>
+                <!-- <div id="menu-container">
                     <a href="">
                         <svg viewBox="0 0 100 80" width="40" height="40">
                             <rect width="100" height="6"></rect>
@@ -31,7 +39,7 @@
                             <rect y="60" width="90" height="6"></rect>
                         </svg>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
 
